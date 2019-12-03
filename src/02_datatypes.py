@@ -14,8 +14,11 @@ y = "7"
 # Write a print statement that combines x + y into the integer value 12
 
 # YOUR CODE HERE
+# Will return error "TypeError: unsupported operand type(s) for +: 'int' and 'str'"
+# print(x + y)
 
 
 # Write a print statement that combines x + y into the string value 57
 
-# YOUR CODE HERE
+# YOUR CODE HERE-
+print(str(x) + y)
