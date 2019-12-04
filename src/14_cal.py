@@ -22,3 +22,15 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+now = datetime.now()
+args = sys.argv
+arg_length = len(sys.argv)
+
+if arg_length > 3:
+    print("Arguments should be in the format '14_cal.py [month] [year]'")
+    quit()
+
+month = int(sys.argv[1]) if arg_length > 1 else now.month
+year = int(sys.argv[2]) if arg_length > 2 else now.year
+print(calendar.month(year, month))
